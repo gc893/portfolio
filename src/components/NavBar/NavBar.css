@@ -17,3 +17,11 @@
       transform: rotate(360deg);
     }
   }
+
+  #navbarNavAltMarkup {
+    justify-content: flex-end;
+  }
+
+  .nav-link > .active {
+    border-bottom: 1px solid #333;
+}

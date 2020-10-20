@@ -1,0 +1,19 @@
+#root {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+#footer {
+    background-color: #343a40;
+    color: white;
+    text-align: right;
+}
+
+.page-section {
+    min-height: 100vh;
+}

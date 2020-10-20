@@ -1,37 +1,38 @@
-import React, {Component} from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './NavBar.css';
+import { Link, animateScroll as scroll } from "react-scroll";
 
-class NavBar extends Component {
-  state = {
-
-  }
-    render(){
-        return (
-            <div className="App">
-            <header>
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="/">
-                <img src={logo} className="App-logo" alt="logo" />
+const NavBar = (props) => {
+    return (
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a className="navbar-brand" href="/">
+                    <img src={logo} className="App-logo" alt="logo" />
                 </a>
-                <a class="navbar-brand" href="/">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a className="navbar-brand" href="/">Gabriela Cabrera</a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        {/* map links from state here */}
-                    <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-link" href="/">Features</a>
-                    <a class="nav-link" href="/">Pricing</a>
-                    <a class="nav-link disabled" href="/" tabindex="-1" aria-disabled="true">Disabled</a>
+                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div className="navbar-nav">
+                        {props.navItems.map((navItem, idx) => 
+                            <Link
+                                className="nav-link"
+                                key={idx}
+                                activeClass="active"
+                                to={navItem.id}
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration={500}
+                            >
+                                {navItem.name}
+                            </Link>
+                        )}
                     </div>
                 </div>
-                </nav>
-            </header>
-            </div>
-        );
-    }
+            </nav>
+    );
 }
-
+ 
 export default NavBar;
