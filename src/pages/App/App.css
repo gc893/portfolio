@@ -8,12 +8,33 @@ main {
     flex: 1 0 auto;
 }
 
+.container-fluid {
+    padding: 1rem;
+}
+
+.page-section {
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.responsive-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-section {
+    width: 100%;
+}
+
 #footer {
     background-color: #343a40;
     color: white;
     text-align: right;
 }
 
-.page-section {
-    min-height: 100vh;
+@media only screen and (min-width: 992px) {
+    .responsive-section {
+        display: flex;
+        flex-direction: row;
+    }
 }

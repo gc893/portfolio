@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './NavBar.css';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link} from "react-scroll";
 
 const NavBar = (props) => {
     return (
