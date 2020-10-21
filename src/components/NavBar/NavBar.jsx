@@ -9,7 +9,7 @@ const NavBar = (props) => {
                 <a className="navbar-brand" href="/">
                     <img src={logo} className="App-logo" alt="logo" />
                 </a>
-                <a className="navbar-brand" href="/">Gabriela Cabrera</a>
+                <a className="navbar-brand" href="/">GC</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

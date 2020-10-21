@@ -4,17 +4,21 @@
     flex-direction: column;
 }
 
+.bg-dark {
+    background-color: #1D140C!important;
+}
+
 main {
     flex: 1 0 auto;
 }
 
 .container-fluid {
-    padding: 1rem;
+    padding: 0;
 }
 
 .page-section {
     min-height: 100vh;
-    padding: 1rem;
+    padding: 0;
 }
 
 .responsive-section {
@@ -23,11 +27,11 @@ main {
 }
 
 .sub-section {
-    width: 100%;
+    flex: 1 1 auto;
 }
 
 #footer {
-    background-color: #343a40;
+    background-color: #1D140C;
     color: white;
     text-align: right;
 }
@@ -36,5 +40,9 @@ main {
     .responsive-section {
         display: flex;
         flex-direction: row;
+    }
+
+    .sub-section {
+        flex: 1 1 100%;
     }
 }

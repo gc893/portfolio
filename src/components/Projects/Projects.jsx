@@ -1,10 +1,13 @@
 import React from 'react';
+import './Projects.css';
 
 const Projects = (props) => {
     return (
-        <div className='page-section'>
+        <div className='page-section' style={{textAlign: 'center'}}>
+            <div id='projects'>
+                <h1 id='projects-title'>Projects</h1>
+            </div>
             
-            <h1 id='projects'>Projects</h1>
         </div>
     );
 }
