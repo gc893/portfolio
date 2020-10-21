@@ -64,7 +64,7 @@ const NavBar = (props) => {
                 <div style={{textAlign: 'center'}}><p>MERN Stack | Python | Django | PostgreSQL</p></div>
                 <div style={{textAlign: 'center'}}>
                     <a href="https://www.linkedin.com/in/gabriela-cabrera-c/" target='_blank' rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a> &nbsp;| &nbsp;
-                    <a href="https://github.com/gc893"><i class="fab fa-github"  target='_blank' rel="noopener noreferrer"></i></a>
+                    <a href="https://github.com/gc893"  target='_blank' rel="noopener noreferrer"><i class="fab fa-github"  target='_blank' rel="noopener noreferrer"></i></a>
                     {/* <button onClick={copyToClipboard}><i class="fas fa-envelope"></i></button> */}
                 </div>
             </div>
