@@ -1,19 +1,19 @@
 import React from 'react';
-import './Projects.css';
+import './Interests.css';
 
-const Projects = (props) => {
+const Interests = (props) => {
     return (
         <div className='page-section' style={{textAlign: 'center'}}>
-            <div id='projects'>
-                <h1 id='projects-title'>Projects</h1>
+            <div id='interests'>
+                <h1 id='projects-title'>Interests</h1>
             </div>
 
-            {props.projects.map((project, idx) =>
+            {props.interests.map((interest, idx) =>
                 <div className='card-section'>
                     <div className="card">
                         <div id={`carousel-${idx}`} class="carousel slide" data-ride="carousel" data-interval="false">
                             <div class="carousel-inner">
-                            {project.projectImages.map((image, idx) =>
+                            {interest.interestImages.map((image, idx) =>
                                 idx === 0 ?
                                 <div class="carousel-item active">
                                 <img src={image} class="d-block w-100" alt="..."/>
@@ -33,11 +33,10 @@ const Projects = (props) => {
                             </a>
                         </div>
                         <div className="card-body">
-                            <h5 className="card-title">{project.projecctTitle}</h5>
-                            <p className="card-text">{project.projectDescription}</p>
-                            <p className="card-text">{project.projectTechnologies.map((tech, idx) => idx < project.projectTechnologies.length -1 ? <span>{tech} | </span> : <span>{tech}</span>)}</p>
-                            <p className="card-text"><a href={project.projectGithub} target='_blank' rel="noopener noreferrer"><i class="fab fa-github"  target='_blank' rel="noopener noreferrer"></i></a></p>
-                            <a href={project.projectLink} className="btn btn-primary" target='_blank' rel="noopener noreferrer">Go to App</a>
+                            <h5 className="card-title">{interest.interestTitle}</h5>
+                            <p className="card-text">{interest.interestDescription}</p>
+                            <p className="card-text">{interest.interestField.map((field, idx) => idx < interest.interestField.length -1 ? <span>{field} | </span> : <span>{field}</span>)}</p>
+                            <a href={interest.interestLink} className="btn btn-primary" target='_blank' rel="noopener noreferrer">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -46,4 +45,4 @@ const Projects = (props) => {
     );
 }
  
-export default Projects;
+export default Interests;

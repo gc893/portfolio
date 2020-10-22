@@ -1,0 +1,50 @@
+#interests {
+    padding: 4rem 2rem 2rem 2rem;
+}
+
+.card-section {
+    padding: 0 3rem 3rem 3rem;
+}
+
+.carousel {
+    background-color: #FAF9F9;
+}
+
+.card-title {
+    font-family: 'Prata', serif;
+}
+
+.card-text {
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+.btn-primary {
+    background-color: #D4916C;
+    border-color: #D4916C;
+}
+
+.btn-primary:hover {
+    background-color: #B4462D;
+    border-color: #B4462D;
+}
+
+.btn-primary:focus {
+    background-color: #B4462D;
+    border-color: #B4462D;
+    box-shadow: none;
+}
+
+@media only screen and (min-width: 992px) {
+    .card {
+        flex-direction: row;
+    }
+
+    .carousel {
+        max-width: 50%;
+    }
+
+    .card-body {
+        max-width: 50%;
+    }
+}

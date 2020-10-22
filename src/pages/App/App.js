@@ -3,6 +3,7 @@ import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
 import AboutMe from '../../components/AboutMe/AboutMe'
 import Projects from '../../components/Projects/Projects'
+import Interests from '../../components/Interests/Interests';
 
 class App extends Component {
   state = {
@@ -34,7 +35,34 @@ class App extends Component {
         'https://i.imgur.com/uuQamzr.png',
         'https://i.imgur.com/A2n25D4.png',
       ]},
+      {projecctTitle: 'Snake Game', 
+      projectDescription: 'Browser-based game that displays a 20x20 board on which the user can control the movement of a line of boxes (snake) by changing its direction with the keyboard arrow keys to prevent the edges of the snake from going over the borders of the board. The board will also radomly add "food" to any box on the board so that the user con intersect it with the snake and win points.', 
+      projectTechnologies: ['HTML', 'CSS', 'JS'], 
+      projectGithub: 'https://github.com/gc893/snake-game', 
+      projectLink: 'https://snake-game-gc.netlify.app/', 
+      projectImages: [
+        'https://i.imgur.com/FaK0nop.png',
+        'https://i.imgur.com/gBwznOk.png',
+        'https://i.imgur.com/J80hj6W.png',
+      ]},
     ],
+    interests: [
+      {interestTitle: "DOE's Industrial Assesment Centers", 
+      interestDescription: 'The Department of Energy has over 31 Industrial Assessment Centers located in Universities accross the US. My first job in the engineering field was as an Undergraduate Research Assistant with the University of Miami team. They gave me the unique opportunity to work with Professors and Graduate Students conducting engineering analysis and reasearch that served the manufacturing industry by identifying opportunities for energy savings. This program is of great value for students looking to become engineers and private companies looking for savings or a smaller carbon footprint.', 
+      interestField: ['Energy', 'Enginnering', 'Research'],  
+      interestLink: 'https://www.energy.gov/eere/amo/industrial-assessment-centers-iacs', 
+      interestImages: [
+        'https://i.imgur.com/hw7SSLu.png',
+      ]},
+      {interestTitle: "Canine Support Group - UCV", 
+      interestDescription: 'This incredible group of students from the "Universidad Central de Venezuela" finds, against all odds, time and resources to care for the dogs that live on campus. This public university, declared Cultural World Heritage Site in the year 2000 receives little to no funding from the government and is still in operation thanks to its remarkable Professors, Students and Canine copmanions.', 
+      interestField: ['Non-Profit', 'Animal Rescue'],  
+      interestLink: 'https://www.instagram.com/gacfc.ucv/', 
+      interestImages: [
+        'https://i.imgur.com/0gozNCs.png',
+      ]},
+    ],
+    
   }
 
   render(){
@@ -48,6 +76,7 @@ class App extends Component {
         <main className='container-fluid'>
             <AboutMe />
             <Projects projects={this.state.projects} />
+            <Interests interests={this.state.interests} />
         </main>
         <footer>
           <div id='footer'>Gabriela Cabrera - 2020 Portfolio&nbsp;&nbsp;&nbsp;&nbsp;</div>
