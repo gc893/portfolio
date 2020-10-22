@@ -43,29 +43,16 @@ const NavBar = (props) => {
         StartTextAnimation(0);
     });
 
-    function copyToClipboard() {
-        /* Get the text field */
-        const copyText = document.getElementById('email')
-
-        copyText.select()
-
-        document.execCommand("copy");
-
-        /* Alert the copied text */
-        alert("Copied the text: " + copyText.innerHTML);
-    }
-
     return (
         <div className='page-section responsive-section'>
             <div id='about-me' className='sub-section'>
                 <h1 id='about-me-h1'>Hi, I'm Gabriela!</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p hidden id='email'>gaby.cabrera9@gmail.com</p>
-                <div style={{textAlign: 'center'}}><p>MERN Stack | Python | Django | PostgreSQL</p></div>
+                <div style={{textAlign: 'center'}}><p> JS | MERN Stack | Python | Django | PostgreSQL</p></div>
                 <div style={{textAlign: 'center'}}>
                     <a href="https://www.linkedin.com/in/gabriela-cabrera-c/" target='_blank' rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a> &nbsp;| &nbsp;
-                    <a href="https://github.com/gc893"  target='_blank' rel="noopener noreferrer"><i class="fab fa-github"  target='_blank' rel="noopener noreferrer"></i></a>
-                    {/* <button onClick={copyToClipboard}><i class="fas fa-envelope"></i></button> */}
+                    <a href="https://github.com/gc893"  target='_blank' rel="noopener noreferrer"><i class="fab fa-github"></i></a> &nbsp;| &nbsp;
+                    <a href="https://www.instagram.com/puyero_coding/"  target='_blank' rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div id='about-me-image' className='sub-section'></div>

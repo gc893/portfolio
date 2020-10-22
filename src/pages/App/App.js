@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
-import AboutMe from '../../components/AboutMe/AboutMe'
-import Projects from '../../components/Projects/Projects'
+import AboutMe from '../../components/AboutMe/AboutMe';
+import Projects from '../../components/Projects/Projects';
 import Interests from '../../components/Interests/Interests';
+import Footer from '../../components/Footer/Footer';
 
 class App extends Component {
   state = {
@@ -79,17 +80,7 @@ class App extends Component {
             <Interests interests={this.state.interests} />
         </main>
         <footer>
-          <div id='footer'>
-            <div id='contact'>
-              Contact Info
-            </div>
-            <div id='footer-center'>
-              Contact Form
-            </div>
-            <div id='footer-right'>
-            Gabriela Cabrera - 2020 Portfolio&nbsp;&nbsp;&nbsp;&nbsp;
-            </div>
-          </div>
+          <Footer />
         </footer>
       </>
     );
