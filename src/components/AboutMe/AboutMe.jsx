@@ -4,7 +4,7 @@ import './AboutMe.css'
 const NavBar = (props) => {
 
     useEffect(() => {
-        var dataText = [ "Hi, I'm Gabriela Cabrera!"];
+        var dataText = [ "Hi, I'm Gabriela!"];
   
         // type one text in the typwriter
         // keeps calling itself until the text is finished
@@ -58,7 +58,7 @@ const NavBar = (props) => {
     return (
         <div className='page-section responsive-section'>
             <div id='about-me' className='sub-section'>
-                <h1 id='about-me-h1'>Hi, I'm Gabriela Cabrera!</h1>
+                <h1 id='about-me-h1'>Hi, I'm Gabriela!</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p hidden id='email'>gaby.cabrera9@gmail.com</p>
                 <div style={{textAlign: 'center'}}><p>MERN Stack | Python | Django | PostgreSQL</p></div>

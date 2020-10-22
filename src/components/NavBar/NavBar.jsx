@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './NavBar.css';
 import { Link} from "react-scroll";
 

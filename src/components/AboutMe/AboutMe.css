@@ -1,4 +1,4 @@
-.page-section span {
+.responsive-section span {
     border-right: .05em solid;
     animation: caret 1s steps(1) infinite;
   }
