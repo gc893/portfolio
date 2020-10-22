@@ -79,7 +79,17 @@ class App extends Component {
             <Interests interests={this.state.interests} />
         </main>
         <footer>
-          <div id='footer'>Gabriela Cabrera - 2020 Portfolio&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          <div id='footer'>
+            <div id='contact'>
+              Contact Info
+            </div>
+            <div id='footer-center'>
+              Contact Form
+            </div>
+            <div id='footer-right'>
+            Gabriela Cabrera - 2020 Portfolio&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+          </div>
         </footer>
       </>
     );

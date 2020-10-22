@@ -33,6 +33,25 @@ main {
 #footer {
     background-color: #1D140C;
     color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+#contact {
+    border-right: 2px white;
+    padding: 1rem;
+    flex: 1 0 auto;
+}
+
+#footer-center {
+    padding: 1rem;
+    flex: 1 0 auto;
+}
+
+#footer-right {
+    padding: 1rem;
+    flex: 1 0 auto;
+    font-size:0.8rem;
     text-align: right;
 }
 
