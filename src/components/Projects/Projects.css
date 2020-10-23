@@ -3,7 +3,7 @@
 }
 
 .card-section {
-    padding: 0 3rem 3rem 3rem;
+    padding: 0 0.5rem 3rem;
 }
 
 .carousel {
@@ -26,6 +26,12 @@
 
 #p {
     background-color: #F4E4E1;
+}
+
+@media only screen and (min-width: 512px) {
+    .card-section {
+        padding: 0 3rem 3rem 3rem;
+    }
 }
 
 @media only screen and (min-width: 992px) {

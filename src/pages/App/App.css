@@ -8,6 +8,10 @@
     background-color: #1D140C!important;
 }
 
+.nav-link {
+    cursor: pointer;
+}
+
 main {
     flex: 1 0 auto;
 }
