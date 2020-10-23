@@ -18,6 +18,10 @@
     }
   }
 
+.navbar-collapse {
+  text-align: center;
+}
+
 #navbarNavAltMarkup {
   justify-content: flex-end;
 }
@@ -30,3 +34,12 @@
   font-size: 1.5rem;
 }
 
+.navbar-nav a {
+  padding: 0.5rem;
+  color: rgba(255,255,255,.5);
+}
+
+.navbar-nav a:hover {
+  color: white;
+  text-decoration: none;
+}

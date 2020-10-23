@@ -12,7 +12,8 @@ class App extends Component {
       {url: '/about-me', name: 'About Me', id:'about-me'},
       {url: '/projects', name: 'Projects', id:'projects'},
       {url: '/interests', name: 'Interests', id:'interests'},
-      {url: '/contact', name: 'Contact', id:'contact'}
+      {url: '/contact', name: 'Contact', id:'contact'},
+      {url: 'https://drive.google.com/file/d/1eDuIj8hGS8CLOzS4SNv0-DMCiJMc28pp/view?usp=sharing', name: 'Resume', id:'resume'}
   ],
     projects: [
       {projecctTitle: 'Link Tracker', 

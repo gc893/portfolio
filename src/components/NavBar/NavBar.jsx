@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavBar.css';
-import { Link} from "react-scroll";
+import {Link} from "react-scroll";
 
 const NavBar = (props) => {
     return (
@@ -14,19 +14,21 @@ const NavBar = (props) => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        {props.navItems.map((navItem, idx) => 
-                            <Link
-                                className="nav-link"
-                                key={idx}
-                                activeClass="active"
-                                to={navItem.id}
-                                spy={true}
-                                smooth={true}
-                                offset={0}
-                                duration={500}
-                            >
-                                {navItem.name}
-                            </Link>
+                        {props.navItems.map((navItem, idx) =>
+                            navItem.id === 'resume' ?
+                                <a href={navItem.url} target='_blank' rel="noopener noreferrer">{navItem.name}</a> :
+                                <Link
+                                    className="nav-link"
+                                    key={idx}
+                                    activeClass="active"
+                                    to={navItem.id}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration={500}
+                                >
+                                    {navItem.name}
+                                </Link>
                         )}
                     </div>
                 </div>
