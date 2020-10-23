@@ -10,6 +10,7 @@ const Interests = (props) => {
 
             {props.interests.map((interest, idx) =>
                 <div className='card-section'>
+                    {/* The div above should definitely be a component :) */}
                     <div className="card">
                         <div id={`carousel-${idx}`} class="carousel slide" data-ride="carousel" data-interval="false">
                             <div class="carousel-inner">

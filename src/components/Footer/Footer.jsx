@@ -7,6 +7,7 @@ const Footer = (props) => {
             <div id='contact'>
                 <p>Gabriela Cabrera</p>
             </div>
+            {/* This div should definitely be a component :) */}
             <div id='footer-center'>
                 <p>Miami, Fl</p>
                 <p>info@gabycabrera.com</p>
@@ -17,7 +18,7 @@ const Footer = (props) => {
                 </p>
             </div>
             <div id='footer-right'>
-                <p>Gabriela Cabrera - 2020 Portfolio</p>
+                <p>Original React App - Oct 2020</p>
             </div>
         </div>
     );

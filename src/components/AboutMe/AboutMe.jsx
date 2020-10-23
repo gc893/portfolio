@@ -47,7 +47,7 @@ const NavBar = (props) => {
         <div className='page-section responsive-section'>
             <div id='about-me' className='sub-section'>
                 <h1 id='about-me-h1'>Hi, I'm Gabriela!</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>I'm a software developer passionate about both design and implementation. I code with reliability and usability in mind, and only once I have a clear plan. My background as an Industrial Engineer taught me the importance of managing scarce resources, such as time, adequately. Because of this, I place special emphasis to planning. This helps me spend less time maintaining and debugging, and more time creating. From CSS design to algorithm design, I add each line of code with care and precision so that my code is lean, predictable, and easy to use and maintain.</p>
                 <div style={{textAlign: 'center'}}><p> JS | MERN Stack | Python | Django | PostgreSQL</p></div>
                 {/* This div should definitely be a component :) */}
                 <div style={{textAlign: 'center'}}>
