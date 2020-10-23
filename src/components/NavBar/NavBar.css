@@ -18,14 +18,15 @@
     }
   }
 
-  #navbarNavAltMarkup {
-    justify-content: flex-end;
-  }
+#navbarNavAltMarkup {
+  justify-content: flex-end;
+}
 
-  .nav-link > .active {
-    border-bottom: 1px solid #333;
+.nav-link > .active {
+  border-bottom: 1px solid #333;
 }
 .navbar-brand {
   font-family: 'Prata', serif;
+  font-size: 1.5rem;
 }
 

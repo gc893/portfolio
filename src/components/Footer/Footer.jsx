@@ -5,7 +5,7 @@ const Footer = (props) => {
     return (
         <div id='footer'>
             <div id='contact'>
-                <h4>Gabriela Cabrera</h4>
+                <p>Gabriela Cabrera</p>
             </div>
             <div id='footer-center'>
                 <p>Miami, Fl</p>
@@ -16,7 +16,7 @@ const Footer = (props) => {
                 </p>
             </div>
             <div id='footer-right'>
-                <p>Gabriela Cabrera - 2020 Portfolio&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>Gabriela Cabrera - 2020 Portfolio</p>
             </div>
         </div>
     );
