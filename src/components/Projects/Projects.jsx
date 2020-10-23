@@ -34,6 +34,7 @@ const Projects = (props) => {
                         </div>
                         <div className="card-body">
                             <h5 className="card-title">{project.projecctTitle}</h5>
+                            <hr style={{borderTop: '1px solid #1D140C', color: '#1D140C' }}/>
                             <p className="card-text">{project.projectDescription}</p>
                             <p className="card-text">{project.projectTechnologies.map((tech, idx) => idx < project.projectTechnologies.length -1 ? <span>{tech} | </span> : <span>{tech}</span>)}</p>
                             <p className="card-text"><a href={project.projectGithub} target='_blank' rel="noopener noreferrer"><i class="fab fa-github"  target='_blank' rel="noopener noreferrer"></i></a></p>

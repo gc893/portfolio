@@ -34,6 +34,7 @@ const Interests = (props) => {
                         </div>
                         <div className="card-body">
                             <h5 className="card-title">{interest.interestTitle}</h5>
+                            <hr style={{borderTop: '1px solid #1D140C', color: '#1D140C' }}/>
                             <p className="card-text">{interest.interestDescription}</p>
                             <p className="card-text">{interest.interestField.map((field, idx) => idx < interest.interestField.length -1 ? <span>{field} | </span> : <span>{field}</span>)}</p>
                             <a href={interest.interestLink} className="btn btn-primary" target='_blank' rel="noopener noreferrer">Learn More</a>
