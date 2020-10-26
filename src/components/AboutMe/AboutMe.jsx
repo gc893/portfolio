@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import Link from '../Links/Links'
 import './AboutMe.css'
 
 const NavBar = (props) => {
@@ -49,13 +50,7 @@ const NavBar = (props) => {
                 <h1 id='about-me-h1'>Hi, I'm Gabriela!</h1>
                 <p>I'm a software developer passionate about both design and implementation. I code with reliability and usability in mind, and only once I have a clear plan. My background as an Industrial Engineer taught me the importance of managing scarce resources, such as time, adequately. Because of this, I place special emphasis to planning. This helps me spend less time maintaining and debugging, and more time creating. From CSS design to algorithm design, I add each line of code with care and precision so that my code is lean, predictable, and easy to use and maintain.</p>
                 <div style={{textAlign: 'center'}}><p> JS | MERN Stack | Python | Django | PostgreSQL</p></div>
-                {/* This div should definitely be a component :) */}
-                <div style={{textAlign: 'center'}}>
-                    <a href="https://www.linkedin.com/in/gabriela-cabrera-c/" target='_blank' rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a> &nbsp;| &nbsp;
-                    <a href="https://github.com/gc893"  target='_blank' rel="noopener noreferrer"><i class="fab fa-github"></i></a> &nbsp;| &nbsp;
-                    <a href="https://www.instagram.com/puyero_coding/"  target='_blank' rel="noopener noreferrer"><i class="fab fa-instagram"></i></a> &nbsp;| &nbsp;
-                    <a href="https://drive.google.com/file/d/1eDuIj8hGS8CLOzS4SNv0-DMCiJMc28pp/view?usp=sharing"  target='_blank' rel="noopener noreferrer"><i class="far fa-file-alt"></i></a>
-                </div>
+                <Link />
             </div>
             <div id='about-me-image' className='sub-section'></div>
         </div>
