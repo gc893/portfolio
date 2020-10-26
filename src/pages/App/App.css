@@ -21,11 +21,11 @@ main {
 }
 
 .page-section {
-    min-height: 100vh;
     padding: 0;
 }
 
 .responsive-section {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
