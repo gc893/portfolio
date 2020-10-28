@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import Link from '../Links/Links'
+import Links from '../Links/Links'
 import './AboutMe.css'
 
 const NavBar = (props) => {
@@ -50,7 +50,7 @@ const NavBar = (props) => {
                 <h1 id='about-me-h1'>Hi, I'm Gabriela!</h1>
                 <p>I'm a software developer passionate about both design and implementation. I code with reliability and usability in mind, and only once I have a clear plan. My background as an Industrial Engineer taught me the importance of managing scarce resources, such as time, adequately. Because of this, I place special emphasis to planning. This helps me spend less time maintaining and debugging, and more time creating. From CSS design to algorithm design, I add each line of code with care and precision so that my code is lean, predictable, and easy to use and maintain.</p>
                 <div style={{textAlign: 'center'}}><p> JS | MERN Stack | Python | Django | PostgreSQL</p></div>
-                <Link />
+                <Links />
             </div>
             <div id='about-me-image' className='sub-section'></div>
         </div>
