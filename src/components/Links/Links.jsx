@@ -2,7 +2,7 @@ import React from 'react';
 
 const Links = () => {
     return (
-        <p style={{textAlign: 'center'}}>
+        <p style={{textAlign: 'center', fontSize: '1.2rem'}}>
             <a href="https://www.linkedin.com/in/gabriela-cabrera-c/" target='_blank' rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a> &nbsp;| &nbsp;
             <a href="https://github.com/gc893"  target='_blank' rel="noopener noreferrer"><i class="fab fa-github"></i></a> &nbsp;| &nbsp;
             <a href="https://www.instagram.com/puyero_coding/"  target='_blank' rel="noopener noreferrer"><i class="fab fa-instagram"></i></a> &nbsp;| &nbsp;
