@@ -3,6 +3,8 @@ import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
 import AboutMe from '../../components/AboutMe/AboutMe';
 import Projects from '../../components/Projects/Projects';
+import Path from '../../components/Path/Path';
+// import Comments from '../../components/Comments/Comments';
 import Interests from '../../components/Interests/Interests';
 import Footer from '../../components/Footer/Footer';
 
@@ -11,13 +13,15 @@ class App extends Component {
     navItems: [
       {url: '/about-me', name: 'About Me', id:'about-me'},
       {url: '/projects', name: 'Projects', id:'projects'},
+      {url: '/path', name: 'Path', id:'path'},
+      // {url: '/comments', name: 'Comments', id:'comments'},
       {url: '/interests', name: 'Interests', id:'interests'},
       {url: '/contact', name: 'Contact', id:'contact'},
       {url: 'https://drive.google.com/file/d/1eDuIj8hGS8CLOzS4SNv0-DMCiJMc28pp/view?usp=sharing', name: 'Resume', id:'resume'}
   ],
     projects: [
       {projecctTitle: 'Link Tracker', 
-      projectDescription: "App to store and manage links to important resources so that users have a centralized database of links pending review, and so that they can plan when to see them depending on their shcedules. The app also lets users see other people's links (but won't let them edit or delete), and allows them to comment on the link.", 
+      projectDescription: "App to store and manage links to important resources so that users have a centralized database of links pending review, and so that they can plan when to see them depending on their schedules. The app also lets users see other people's links (but won't let them edit or delete), and allows them to comment on the link.", 
       projectTechnologies: ['Python', 'PostgreSQL', 'Django', 'HTML', 'CSS', 'JS', 'Bootstrap', 'Heroku'], 
       projectGithub: 'https://github.com/gc893/link-tracker', 
       projectLink: 'https://link-tracker.herokuapp.com/', 
@@ -78,6 +82,8 @@ class App extends Component {
         <main className='container-fluid'>
             <AboutMe />
             <Projects projects={this.state.projects} />
+            <Path />
+            {/* <Comments /> */}
             <Interests interests={this.state.interests} />
         </main>
         <footer>

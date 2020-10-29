@@ -1,0 +1,33 @@
+#path {
+    padding: 4rem 2rem 1rem 2rem;
+}
+
+.path-section {
+    padding: 0 0.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.path-section h5 {
+    font-family: 'Prata', serif;
+}
+
+.path-section p {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (min-width: 512px) {
+    .path-section {
+        padding: 0 3rem 3rem 3rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .path-section {
+        padding: 0 3rem 2rem 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
