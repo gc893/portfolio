@@ -6,19 +6,40 @@
     padding: 0 0.5rem 3rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-/* @media only screen and (min-width: 512px) {
-    .path-section {
-        padding: 0 3rem 3rem 3rem;
+.card-quotee {
+    display: flex;
+    justify-content: center;
+}
+
+#comment-carousel {
+    background-color: unset;
+}
+
+.carousel-indicators {
+    position: relative;
+    margin: 1rem;
+    z-index: unset;
+}
+
+.carousel-indicators li {
+    background-color: #D4916C;
+}
+
+.carousel-indicators li.active {
+    background-color: #B4462D;
+}
+
+@media only screen and (min-width: 512px) {
+    .comment-section {
+        padding: 0 3rem 2rem 3rem;    
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .path-section {
-        padding: 0 3rem 2rem 3rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .comment-section {
+        padding: 0 3rem 2rem 3rem;        
     }
-} */
+} 

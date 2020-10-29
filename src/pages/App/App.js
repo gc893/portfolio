@@ -4,7 +4,7 @@ import './App.css';
 import AboutMe from '../../components/AboutMe/AboutMe';
 import Projects from '../../components/Projects/Projects';
 import Path from '../../components/Path/Path';
-// import Comments from '../../components/Comments/Comments';
+import Comments from '../../components/Comments/Comments';
 import Interests from '../../components/Interests/Interests';
 import Footer from '../../components/Footer/Footer';
 
@@ -14,7 +14,7 @@ class App extends Component {
       {url: '/about-me', name: 'About Me', id:'about-me'},
       {url: '/projects', name: 'Projects', id:'projects'},
       {url: '/path', name: 'Path', id:'path'},
-      // {url: '/comments', name: 'Comments', id:'comments'},
+      {url: '/comments', name: 'Comments', id:'comments'},
       {url: '/interests', name: 'Interests', id:'interests'},
       {url: '/contact', name: 'Contact', id:'contact'},
       {url: 'https://drive.google.com/file/d/1eDuIj8hGS8CLOzS4SNv0-DMCiJMc28pp/view?usp=sharing', name: 'Resume', id:'resume'}
@@ -83,7 +83,7 @@ class App extends Component {
             <AboutMe />
             <Projects projects={this.state.projects} />
             <Path />
-            {/* <Comments /> */}
+            <Comments />
             <Interests interests={this.state.interests} />
         </main>
         <footer>

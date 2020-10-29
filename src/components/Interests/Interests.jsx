@@ -3,7 +3,7 @@ import './Interests.css';
 
 const Interests = (props) => {
     return (
-        <div id='p' className='page-section' style={{textAlign: 'center'}}>
+        <div className='page-section' style={{textAlign: 'center'}}>
             <div id='interests'>
                 <h1 id='projects-title'>Interests</h1>
             </div>

@@ -3,41 +3,39 @@ import './Comments.css';
 
 const Comments = () => {
     return (
-        <div id='p' className='page-section' style={{textAlign: 'center'}}>
+        <div id='p' className='page-section comment-section' style={{textAlign: 'center'}}>
             <div id='comments'>
                 <h1 id='comments-title'>Comments</h1>
             </div>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
+            <div id="comment-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <p>Test</p>
-                        <p>Test</p>
-                        <p>Test</p>
+                        <p>"Gabriela is proactive, positive, and engaged, and has already demonstrated great leadership in the classroom. She brings important insights and perspectives to the table, and is going to bring a lot to the software engineering industry!"</p>
+                        <div className='card-quotee'>
+                            <p style={{paddingRight: 0}}><a href="https://www.linkedin.com/in/anna-krieger/" target='_blank' rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></p>
+                            <p>Anna Krieger - GA Career Coach</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <p>Test</p>
-                        <p>Test</p>
-                        <p>Test</p>
+                        <p>"Gabriela continually challenges herself with every task she undertakes.  She's resourceful and creative, and everything she builds reflects that."</p>
+                        <div className='card-quotee'>
+                            <p style={{paddingRight: 0}}><a href="https://www.linkedin.com/in/benjamintmanley/" target='_blank' rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></p>
+                            <p>Ben Manley - GA Instructor</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <p>Test</p>
-                        <p>Test</p>
-                        <p>Test</p>
+                        <p>"Gabriela's work is a perfect reflection of her values and spirit. She's always excited and motivated to use every opportunity she's given to explore problems and pursue quality solutions."</p>
+                        <div className='card-quotee'>
+                            <p style={{paddingRight: 0}}><a href="https://www.linkedin.com/in/david-stinson/" target='_blank' rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></p>
+                            <p>David Stinson - GA Instructor</p>
+                        </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>  
+                <ol class="carousel-indicators">
+                    <li data-target="#comment-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#comment-carousel" data-slide-to="1"></li>
+                    <li data-target="#comment-carousel" data-slide-to="2"></li>
+                </ol>
             </div>
         </div>
     );
