@@ -55,7 +55,7 @@ class App extends Component {
     interests: [
       {interestTitle: "DOE's Industrial Assesment Centers", 
       interestDescription: 'The Department of Energy has over 31 Industrial Assessment Centers located in Universities accross the US. My first job in the engineering field was as an Undergraduate Research Assistant with the University of Miami team. They gave me the unique opportunity to work with Professors and Graduate Students conducting engineering analysis and reasearch that served the manufacturing industry by identifying opportunities for energy savings. This program is of great value for students looking to become engineers and private companies looking for savings or a smaller carbon footprint.', 
-      interestField: ['Energy', 'Enginnering', 'Research'],  
+      interestField: ['Energy', 'Engineering', 'Research'],  
       interestLink: 'https://www.energy.gov/eere/amo/industrial-assessment-centers-iacs', 
       interestImages: [
         'https://i.imgur.com/hw7SSLu.png',
