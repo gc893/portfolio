@@ -16,7 +16,7 @@ const NavBar = (props) => {
                     <div className="navbar-nav">
                         {props.navItems.map((navItem, idx) =>
                             navItem.id === 'resume' ?
-                                <a href={navItem.url} target='_blank' rel="noopener noreferrer">{navItem.name}</a> :
+                                <a key={idx} href={navItem.url} target='_blank' rel="noopener noreferrer">{navItem.name}</a> :
                                 <Link
                                     className="nav-link"
                                     key={idx}
