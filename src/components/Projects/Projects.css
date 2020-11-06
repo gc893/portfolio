@@ -28,6 +28,12 @@
     background-color: #F4E4E1;
 }
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+        background-image: unset;
+        color: #B4462D;
+        font-size: 1.8rem;
+}
+
 @media only screen and (min-width: 512px) {
     .card-section {
         padding: 0 3rem 3rem 3rem;
