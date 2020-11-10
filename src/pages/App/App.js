@@ -17,7 +17,7 @@ class App extends Component {
       {url: '/comments', name: 'Comments', id:'comments'},
       {url: '/interests', name: 'Interests', id:'interests'},
       {url: '/contact', name: 'Contact', id:'contact'},
-      {url: 'https://drive.google.com/file/d/1eDuIj8hGS8CLOzS4SNv0-DMCiJMc28pp/view?usp=sharing', name: 'Resume', id:'resume'}
+      {url: 'https://drive.google.com/file/d/1_aszv_hVVdSbfLE5ERC0FrHQ3AigbCuu/view?usp=sharing', name: 'Resume', id:'resume'}
   ],
     projects: [
       {projecctTitle: 'Link Tracker', 
